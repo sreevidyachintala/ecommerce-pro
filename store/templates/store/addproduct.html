@@ -1,0 +1,20 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+	<label for="pname"></label>
+	<input type="text" placeholder="enter product name" class="form-control" name="pname">
+	<label for="price"></label>
+	<input type="number" placeholder="enter price" class="form-control" name="price">
+	<label for="digital"></label>
+	<input type="number" placeholder="enter digital...." class="form-control" name="digital">
+	<label for="image"></label>
+	<input type="text" placeholder="enter image link" class="form-control" name="image">
+	<div>
+		<button type="submit" class="btn btn-outline-sucess">submit</button>
+	</div>
+	
+	</div>
+
+{% endblock content %}

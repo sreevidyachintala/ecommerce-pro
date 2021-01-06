@@ -13,6 +13,7 @@ urlpatterns = [
 	path('login/',views.login,name='login'),
 	path('view1/',views.view1,name='v28'),
 	path('profile/',views.profile,name='profile'),
+	path('addpro/',views.addproduct,name="addpro"),
 	
 	path('dsh/',views.dashboard,name='dsh'),
 	path('log/',v.LoginView.as_view(template_name='store/login1.html'),name='log'),

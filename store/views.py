@@ -106,4 +106,7 @@ def dashboard(request):
 
 def profile(request):
 	return render(request,'store/profile.html')
+
+def addproduct(request):
+	return render(request,'store/addproduct.html')
 	
