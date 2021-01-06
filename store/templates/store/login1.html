@@ -1,0 +1,23 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+	<div class="card mt-4 col-md-6 mx-auto">
+			<h2 class="bg-warning text-white text-center mx-2 my-2 p-2 border roundeds">Login</h2>
+			
+			<form method="post">
+				{% csrf_token %}
+				<!-- {{form.as_p}} -->
+				<div class="form-group mx-3">
+					<input type="text" name="username" class="form-control my-2" placeholder="enter username">
+					<input type="password" name="password" class="form-control my-2" placeholder="enter password">
+					<input type="submit" value="login", class="btn btn-success btn-block">
+				</div>
+			</form>
+		</div>
+	</div>
+	
+
+
+{% endblock content %}
